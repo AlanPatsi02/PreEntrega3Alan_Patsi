@@ -1,18 +1,29 @@
-.nosotros img{
+$font1: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+$font2: erdana, Geneva, Tahoma, sans-serif;
+$color: brown;
+@mixin img (){
     width: 100%;
     height: auto;
     margin-top: 10px;
     margin-bottom: 10px;
 }
-.nosotros h3,p{
+@mixin reseteo(){
     text-align: center;
     margin: 10px;
 }
-.nosotros h3{
-    font-size: 30px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-}
-.nosotros p{
-    font-size:15px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+.nosotros{
+    img{
+    @include img(); 
+    }
+    h3{
+        color: $color;
+        font-size: 30px;
+        font-family:$font1;
+        @include reseteo();
+    }
+    p{
+        @include reseteo();
+        font-size:15px;
+        font-family: $font2;
+    }
 }
