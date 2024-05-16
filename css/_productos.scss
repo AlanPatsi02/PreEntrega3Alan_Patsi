@@ -18,6 +18,11 @@ $radius: 10px;
     @include galeria();
     .item{
         @include estilo-item();
+        transition: all 500ms ease;
+        &:hover{
+            transform: scale(1.1);
+
+        }
     }
     .item1{
         background-image: url(../assets/traje.webp);

@@ -173,6 +173,10 @@ footer .enlaces {
   border-radius: 10px;
   background-position: center;
   background-size: cover;
+  transition: all 500ms ease;
+}
+.galeria-productos .item:hover {
+  transform: scale(1.1);
 }
 .galeria-productos .item1 {
   background-image: url(../assets/traje.webp);
