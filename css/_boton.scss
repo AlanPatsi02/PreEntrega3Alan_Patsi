@@ -1,20 +1,27 @@
-.suscribirse{
-    text-align: center;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 15px;
-}
-.suscribirse .boton{
-    background-color: black;
-    border-radius: 5px;
-    text-decoration: none;
-    bottom: 0;
-    color: white;
-    padding: 8px;
+$font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+$color1: black;
+$color2: white;
+
+@mixin input(){
+    margin: 20px;
+width: 250px;
+height: 30px;
+text-align:center;
 }
 
-.suscribirse input{
-    margin: 20px;
-    width: 250px;
-    height: 30px;
-    text-align:center ;
+.suscribirse{
+    text-align: center;
+    font-family: $font;
+    font-size: 15px;
+    .boton{
+        background-color: $color1;
+        border-radius: 5px;
+        text-decoration: none;
+        bottom: 0;
+        color: $color2;
+        padding: 8px;
+    }
+    input{
+        @include input();
+    }
 }

@@ -29,7 +29,6 @@ header h2 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
   font-size: 15px;
 }
-
 .suscribirse .boton {
   background-color: black;
   border-radius: 5px;
@@ -38,7 +37,6 @@ header h2 {
   color: white;
   padding: 8px;
 }
-
 .suscribirse input {
   margin: 20px;
   width: 250px;
