@@ -132,7 +132,6 @@ footer .enlaces {
   padding-top: 56.25%;
   position: relative;
 }
-
 .mapa-responsive iframe {
   border: 0;
   height: 100%;
@@ -169,43 +168,34 @@ footer .enlaces {
   grid-template-rows: repeat(8, 350px);
   grid-gap: 10px;
 }
-
-.item {
+.galeria-productos .item {
   border: 4px solid black;
   border-radius: 10px;
   background-position: center;
   background-size: cover;
 }
-
-.item1 {
+.galeria-productos .item1 {
   background-image: url(../assets/traje.webp);
 }
-
-.item2 {
+.galeria-productos .item2 {
   background-image: url(../assets/sweater.webp);
 }
-
-.item3 {
+.galeria-productos .item3 {
   background-image: url(../assets/remera.webp);
 }
-
-.item4 {
+.galeria-productos .item4 {
   background-image: url(../assets/jean.webp);
 }
-
-.item5 {
+.galeria-productos .item5 {
   background-image: url(../assets/campera.webp);
 }
-
-.item6 {
+.galeria-productos .item6 {
   background-image: url(../assets/camisa.webp);
 }
-
-.item7 {
+.galeria-productos .item7 {
   background-image: url(../assets/buzo.webp);
 }
-
-.item8 {
+.galeria-productos .item8 {
   background-image: url(../assets/bermuda.webp);
 }
 
@@ -274,8 +264,8 @@ footer .enlaces {
 }
 
 .video-inicial video {
-  width: 100%; /* El video ocupa todo el ancho del contenedor */
-  height: auto; /* Mantiene el aspecto */
+  width: 100%;
+  height: auto;
   margin-top: 10px;
   margin-bottom: 10px;
 }

@@ -1,39 +1,48 @@
-.galeria-productos{
+$est-borde:4px solid black;
+$radius: 10px;
+@mixin galeria(){
     margin: 10px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(8, 350px);
     grid-gap: 10px;
 }
-.item{
-    border: 4px solid black;
-    border-radius: 10px;
+@mixin estilo-item(){
+    border: $est-borde;
+    border-radius: $radius;
     background-position: center;
     background-size: cover; 
+}
+
+.galeria-productos{
+    @include galeria();
+    .item{
+        @include estilo-item();
     }
-.item1{
-    background-image: url(../assets/traje.webp);
-}
-.item2{
-    background-image: url(../assets/sweater.webp);
-}
-.item3{
-    background-image: url(../assets/remera.webp);
-}
-.item4{
-    background-image: url(../assets/jean.webp);
-}
-.item5{
-    background-image: url(../assets/campera.webp);
-}
-.item6{
-    background-image: url(../assets/camisa.webp);
-}
-.item7{
-    background-image: url(../assets/buzo.webp);
-}
-.item8{
-    background-image: url(../assets/bermuda.webp);
+    .item1{
+        background-image: url(../assets/traje.webp);
+    }
+    .item2{
+        background-image: url(../assets/sweater.webp);
+    }
+    .item3{
+        background-image: url(../assets/remera.webp);
+    }
+    .item4{
+        background-image: url(../assets/jean.webp);
+    }
+    .item5{
+        background-image: url(../assets/campera.webp);
+    }
+    .item6{
+        background-image: url(../assets/camisa.webp);
+    }
+    .item7{
+        background-image: url(../assets/buzo.webp);
+    }
+    .item8{
+        background-image: url(../assets/bermuda.webp);
+    }
 }
 
 /* media queris para la página Productos */

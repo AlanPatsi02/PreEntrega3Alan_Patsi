@@ -1,7 +1,12 @@
-.metodos img{
+@mixin ajuste(){
     width: 100%;
     height: auto;
     margin-bottom: 5px;
     margin-top: 30px;
     padding: 5px;
+}
+.metodos{
+    img{
+        @include ajuste();
+    }
 }

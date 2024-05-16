@@ -1,7 +1,23 @@
+$color1: blue;
+$font:Verdana, Geneva, Tahoma, sans-serif;
+@mixin responsive(){
+    overflow: hidden;
+    padding-top: 56.25%;
+    position: relative;
+}
+@mixin mapa(){
+    border: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
 .horario-inicio{
     text-align: center;
-    color: blue;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: $color1;
+    font-family:$font;
     margin-top: 10px;
 }
 .accordion{
@@ -11,16 +27,8 @@
     margin-top: 35px;
 }
 .mapa-responsive {
-    overflow: hidden;
-    padding-top: 56.25%;
-    position: relative;
-}
-
-.mapa-responsive iframe {
-    border: 0;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
+    @include responsive();
+    iframe{
+        @include mapa();
+    }
 }
