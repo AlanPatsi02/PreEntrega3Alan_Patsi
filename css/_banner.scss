@@ -1,8 +1,30 @@
-header h2 {
-    background-color: brown;
-    color: white;
-    font-size: 16px;
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 5px;
+$color1: brown;
+$color2: white;
+@mixin animacion (){
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-delay: 5s;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+}
+
+header{
+    background-color: $color1;
+    h2{
+        color: $color2;
+        font-size: 16px;
+        text-align: center;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding: 5px;
+        @include animacion();
+    }
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
