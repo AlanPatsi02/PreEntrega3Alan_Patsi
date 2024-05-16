@@ -92,25 +92,21 @@ footer {
   padding: 20px;
   text-align: center;
 }
-
 footer a {
   color: #FFD700;
   text-decoration: none;
   margin: 0 10px;
 }
-
 footer a:hover {
   text-decoration: underline;
   color: white;
 }
-
-.seccion-footer {
+footer .seccion-footer {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-
-.enlaces {
+footer .enlaces {
   flex: 1;
   min-width: 150px;
   margin-bottom: 20px;

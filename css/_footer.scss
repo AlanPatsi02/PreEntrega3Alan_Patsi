@@ -1,29 +1,43 @@
-footer {
-    background-color: #333;
-    color: white;
+$color1:#333;
+$color2: white;
+$color3: #FFD700;
+$text: center;
+$textdeco:none;
+@mixin footer(){
+    background-color: $color1;
+    color: $color2;
     padding: 20px;
-    text-align: center;
+    text-align: $text;
 }
-
-footer a {
-    color: #FFD700;
-    text-decoration: none;
+@mixin enlace(){
+    color: $color3;
+    text-decoration: $textdeco;
     margin: 0 10px;
 }
-
-footer a:hover {
-    text-decoration: underline;
-    color:white;
-}
-
-.seccion-footer {
+@mixin enlaces2(){
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-
-.enlaces {
+@mixin enlaces3(){
     flex: 1;
     min-width: 150px;
     margin-bottom: 20px;
+}
+
+footer{
+    @include footer();
+    a{
+        @include enlace();
+        &:hover{
+            text-decoration: underline;
+            color:$color2;
+        }
+    }
+    .seccion-footer{
+        @include enlaces2();
+    }
+    .enlaces{
+@include enlaces3();
+    }
 }
