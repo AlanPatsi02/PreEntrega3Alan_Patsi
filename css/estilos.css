@@ -263,6 +263,10 @@ footer .enlaces {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F2F2F2;
+}
+
 .video-inicial video {
   width: 100%;
   height: auto;
