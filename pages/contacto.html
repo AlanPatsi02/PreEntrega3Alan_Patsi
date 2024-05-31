@@ -53,37 +53,17 @@
         </nav>
     </header>
     <!-- Se ingresa Formulario -->
-    <div class="container mt-5">
-        <div class="container mt-5">
-            <div class="text-center mb-5">
-                <h1>Formulario de Contacto</h1>
-            </div>
-        <form>
-            <div class="row mb-3">
-                <div class="col">
-                    <label for="nombre" class="form-label">Nombre</label>
-                    <input type="text" class="form-control" id="nombre" required>
-                </div>
-                <div class="col">
-                    <label for="apellido" class="form-label">Apellido</label>
-                    <input type="text" class="form-control" id="apellido" required>
-                </div>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label">Correo Electrónico</label>
-                <input type="email" class="form-control" id="email" placeholder="Ingrese su email" required>
-            </div>
-            <div class="mb-3">
-                <label for="telefono" class="form-label">Teléfono</label>
-                <input type="tel" class="form-control" id="telefono" placeholder="Ingrese su teléfono" required>
-            </div>
-            <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingrese su mensaje aquí..." required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
+    <section id="formulario">
+        <h3>¡Contactanos!</h3>
+        <form class="form">
+            <input type="text" placeholder="Nombre" required>
+            <input type="text" placeholder="Apellido">
+            <input type="text" placeholder="Correo Electrónico" required>
+            <input type="text" placeholder="Teléfono de contacto" required>
+            <textarea input type="text" placeholder="Ingrese su Mensaje" required></textarea>
+            <input class="enviar" type="submit" value="Enviar">
         </form>
-    </div>
+    </section>
     <section class="whatsapp">
         <h4>¡También podes contactarte por nuestro Whatsapp!</h4>
         <a href="https://api.whatsapp.com/send/?phone=5491126412851">+54 11-2641-2851</a>
